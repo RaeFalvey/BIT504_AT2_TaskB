@@ -16,7 +16,7 @@ import java.awt.BasicStroke;
 	  private final static Color BACKGROUND_COLOUR = Color.BLACK;
 		private final static int TIMER_DELAY = 5;
 		private final static int BALL_MOVEMENT_SPEED = 3;
-		private final static int POINTS_TO_WIN = 3;
+		private final static int POINTS_TO_WIN = 5;
 		private final static int SCORE_TEXT_X = 100;
 		private final static int SCORE_TEXT_Y = 100;
 		private final static int SCORE_FONT_SIZE = 50;
@@ -25,7 +25,7 @@ import java.awt.BasicStroke;
 		private final static int WINNER_TEXT_Y = 200;
 		private final static int WINNER_FONT_SIZE = 40;
 		private final static String WINNER_FONT_FAMILY = "Serif";
-		private final static String WINNER_TEXT = "WIN!";
+		private final static String WINNER_TEXT = "WINNER WINNER CHICKEN DINNER!";
 	  
 	  gameState GameState = gameState.Initialising;
 	  Ball ball;
@@ -126,14 +126,14 @@ import java.awt.BasicStroke;
 	public void keyPressed(KeyEvent event) {
 		// TODO Auto-generated method stub
 		if(event.getKeyCode() == KeyEvent.VK_W) {
-            paddle1.setyVelocity(-1);
+            paddle1.setyVelocity(-3);
         } else if(event.getKeyCode() == KeyEvent.VK_S) {
-            paddle1.setyVelocity(1);
+            paddle1.setyVelocity(3);
         }
         if(event.getKeyCode() == KeyEvent.VK_UP) {
-            paddle2.setyVelocity(-1);
+            paddle2.setyVelocity(-3);
         } else if(event.getKeyCode() == KeyEvent.VK_DOWN) {
-            paddle2.setyVelocity(1);
+            paddle2.setyVelocity(3);
         }
     
 	}
